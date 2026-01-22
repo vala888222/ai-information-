@@ -1,0 +1,83 @@
+/* Use Cases Section */
+.usecases-section {
+  padding: 5rem 1.5rem;
+  background: var(--bg-page);
+}
+
+.usecases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.usecase-card {
+  background: var(--bg-card);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+}
+
+.usecase-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.usecase-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.usecase-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-section);
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+}
+
+.usecase-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.usecase-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usecase-list li {
+  padding: 0.5rem 0;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.usecase-list li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .usecases-section {
+    padding: 3rem 1rem;
+  }
+  
+  .usecases-grid {
+    grid-template-columns: 1fr;
+  }
+}
